@@ -39,7 +39,7 @@ const Update = () => {
       return;
     }
 
-    const { data, error, status } = await supabase
+    const { data, error } = await supabase
       .from("smoothies")
       .update({ title, method, rating })
       .eq("id", id)
