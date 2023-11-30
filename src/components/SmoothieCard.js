@@ -1,8 +1,7 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import supabase from "../config/supabaseClient";
 
 const SmoothieCard = ({ smoothie, onDelete }) => {
-  const navigate = useNavigate();
 
   const handleDelete = async () => {
     const { error } = await supabase
